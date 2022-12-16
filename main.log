@@ -1,0 +1,329 @@
+POST https://restful-booker.herokuapp.com/booking: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "192.168.29.24",
+        "family": "IPv4",
+        "port": 55944
+      },
+      "remote": {
+        "address": "3.209.172.72",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "ECDHE-RSA-AES128-GCM-SHA256",
+        "standardName": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.2",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "commonName": "*.herokuapp.com",
+          "alternativeNames": "DNS:*.herokuapp.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "Amazon",
+          "organizationalUnit": "Server CA 1B",
+          "commonName": "Amazon"
+        },
+        "validFrom": "May  2 00:00:00 2022 GMT",
+        "validTo": "May 31 23:59:59 2023 GMT",
+        "fingerprint": "D6:27:27:66:FB:8A:91:E6:31:3A:B8:AF:B1:79:4B:8F:C7:A6:5A:DC",
+        "serialNumber": "0ca957132974cf013412536c0da68557"
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.29.2",
+    "accept": "*/*",
+    "postman-token": "c09ce43f-b6ca-4fc6-90a7-36ce366c6354",
+    "host": "restful-booker.herokuapp.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "280"
+  },
+  "Request Body": "{\n    \"firstname\" : \"FNameDm88LM2a6v77XKk80N9g\",\n    \"lastname\" : \"LNameDm88LM2a6v77XKk80N9g\",\n    \"totalprice\" : 111,\n    \"depositpaid\" : true,\n    \"bookingdates\" : {\n        \"checkin\" : \"2018-01-01\",\n        \"checkout\" : \"2019-01-01\"\n    },\n    \"additionalneeds\" : \"Breakfast\"\n}",
+  "Response Headers": {
+    "server": "Cowboy",
+    "connection": "keep-alive",
+    "x-powered-by": "Express",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "239",
+    "etag": "W/\"ef-wh3i02ps2NN7f5dO9LdPm2yTTt8\"",
+    "date": "Fri, 16 Dec 2022 16:56:21 GMT",
+    "via": "1.1 vegur"
+  },
+  "Response Body": "{\"bookingid\":2914,\"booking\":{\"firstname\":\"FNameDm88LM2a6v77XKk80N9g\",\"lastname\":\"LNameDm88LM2a6v77XKk80N9g\",\"totalprice\":111,\"depositpaid\":true,\"bookingdates\":{\"checkin\":\"2018-01-01\",\"checkout\":\"2019-01-01\"},\"additionalneeds\":\"Breakfast\"}}"
+}
+GET https://restful-booker.herokuapp.com/booking/2914: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "192.168.29.24",
+        "family": "IPv4",
+        "port": 55944
+      },
+      "remote": {
+        "address": "3.209.172.72",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "ECDHE-RSA-AES128-GCM-SHA256",
+        "standardName": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.2",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "commonName": "*.herokuapp.com",
+          "alternativeNames": "DNS:*.herokuapp.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "Amazon",
+          "organizationalUnit": "Server CA 1B",
+          "commonName": "Amazon"
+        },
+        "validFrom": "May  2 00:00:00 2022 GMT",
+        "validTo": "May 31 23:59:59 2023 GMT",
+        "fingerprint": "D6:27:27:66:FB:8A:91:E6:31:3A:B8:AF:B1:79:4B:8F:C7:A6:5A:DC",
+        "serialNumber": "0ca957132974cf013412536c0da68557"
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.29.2",
+    "accept": "*/*",
+    "postman-token": "a351bef7-ae71-4c17-ab30-dd569abad9b4",
+    "host": "restful-booker.herokuapp.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Request Body": "",
+  "Response Headers": {
+    "server": "Cowboy",
+    "connection": "keep-alive",
+    "x-powered-by": "Express",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "210",
+    "etag": "W/\"d2-F4Y/GIBMgdMrOHoxOOeuOllcm4w\"",
+    "date": "Fri, 16 Dec 2022 16:56:21 GMT",
+    "via": "1.1 vegur"
+  },
+  "Response Body": "{\"firstname\":\"FNameDm88LM2a6v77XKk80N9g\",\"lastname\":\"LNameDm88LM2a6v77XKk80N9g\",\"totalprice\":111,\"depositpaid\":true,\"bookingdates\":{\"checkin\":\"2018-01-01\",\"checkout\":\"2019-01-01\"},\"additionalneeds\":\"Breakfast\"}"
+}
+PUT https://restful-booker.herokuapp.com/booking/2914: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "192.168.29.24",
+        "family": "IPv4",
+        "port": 55944
+      },
+      "remote": {
+        "address": "3.209.172.72",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "ECDHE-RSA-AES128-GCM-SHA256",
+        "standardName": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.2",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "commonName": "*.herokuapp.com",
+          "alternativeNames": "DNS:*.herokuapp.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "Amazon",
+          "organizationalUnit": "Server CA 1B",
+          "commonName": "Amazon"
+        },
+        "validFrom": "May  2 00:00:00 2022 GMT",
+        "validTo": "May 31 23:59:59 2023 GMT",
+        "fingerprint": "D6:27:27:66:FB:8A:91:E6:31:3A:B8:AF:B1:79:4B:8F:C7:A6:5A:DC",
+        "serialNumber": "0ca957132974cf013412536c0da68557"
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "authorization": "Basic YWRtaW46cGFzc3dvcmQxMjM=",
+    "user-agent": "PostmanRuntime/7.29.2",
+    "accept": "*/*",
+    "postman-token": "f9d72ede-5e09-419d-b277-fa1c9eae83c7",
+    "host": "restful-booker.herokuapp.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive",
+    "content-length": "273"
+  },
+  "Request Body": "{\n    \"firstname\" : \"UpdatedFirstName\",\n    \"lastname\" : \"UpdatedLastName\",\n    \"totalprice\" : 111,\n    \"depositpaid\" : true,\n    \"bookingdates\" : {\n        \"checkin\" : \"2018-01-01\",\n        \"checkout\" : \"2019-01-01\"\n    },\n    \"additionalneeds\" : \"B&B - Bed & Breakfast\"\n}",
+  "Response Headers": {
+    "server": "Cowboy",
+    "connection": "keep-alive",
+    "x-powered-by": "Express",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "203",
+    "etag": "W/\"cb-LGIWcLT/V56526qkJwmhwICX7ho\"",
+    "date": "Fri, 16 Dec 2022 16:56:21 GMT",
+    "via": "1.1 vegur"
+  },
+  "Response Body": "{\"firstname\":\"UpdatedFirstName\",\"lastname\":\"UpdatedLastName\",\"totalprice\":111,\"depositpaid\":true,\"bookingdates\":{\"checkin\":\"2018-01-01\",\"checkout\":\"2019-01-01\"},\"additionalneeds\":\"B&B - Bed & Breakfast\"}"
+}
+DELETE https://restful-booker.herokuapp.com/booking/2914: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "192.168.29.24",
+        "family": "IPv4",
+        "port": 55944
+      },
+      "remote": {
+        "address": "3.209.172.72",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "ECDHE-RSA-AES128-GCM-SHA256",
+        "standardName": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.2",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "commonName": "*.herokuapp.com",
+          "alternativeNames": "DNS:*.herokuapp.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "Amazon",
+          "organizationalUnit": "Server CA 1B",
+          "commonName": "Amazon"
+        },
+        "validFrom": "May  2 00:00:00 2022 GMT",
+        "validTo": "May 31 23:59:59 2023 GMT",
+        "fingerprint": "D6:27:27:66:FB:8A:91:E6:31:3A:B8:AF:B1:79:4B:8F:C7:A6:5A:DC",
+        "serialNumber": "0ca957132974cf013412536c0da68557"
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "authorization": "Basic YWRtaW46cGFzc3dvcmQxMjM=",
+    "user-agent": "PostmanRuntime/7.29.2",
+    "accept": "*/*",
+    "postman-token": "e756e0fc-2b40-43be-b54a-1ca36cee52ac",
+    "host": "restful-booker.herokuapp.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Request Body": "",
+  "Response Headers": {
+    "server": "Cowboy",
+    "connection": "keep-alive",
+    "x-powered-by": "Express",
+    "content-type": "text/plain; charset=utf-8",
+    "content-length": "7",
+    "etag": "W/\"7-rM9AyJuqT6iOan/xHh+AW+7K/T8\"",
+    "date": "Fri, 16 Dec 2022 16:56:21 GMT",
+    "via": "1.1 vegur"
+  },
+  "Response Body": "Created"
+}
+GET https://restful-booker.herokuapp.com/booking/2914: {
+  "Network": {
+    "addresses": {
+      "local": {
+        "address": "192.168.29.24",
+        "family": "IPv4",
+        "port": 55944
+      },
+      "remote": {
+        "address": "3.209.172.72",
+        "family": "IPv4",
+        "port": 443
+      }
+    },
+    "tls": {
+      "reused": false,
+      "authorized": true,
+      "authorizationError": null,
+      "cipher": {
+        "name": "ECDHE-RSA-AES128-GCM-SHA256",
+        "standardName": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+        "version": "TLSv1/SSLv3"
+      },
+      "protocol": "TLSv1.2",
+      "ephemeralKeyInfo": {},
+      "peerCertificate": {
+        "subject": {
+          "commonName": "*.herokuapp.com",
+          "alternativeNames": "DNS:*.herokuapp.com"
+        },
+        "issuer": {
+          "country": "US",
+          "organization": "Amazon",
+          "organizationalUnit": "Server CA 1B",
+          "commonName": "Amazon"
+        },
+        "validFrom": "May  2 00:00:00 2022 GMT",
+        "validTo": "May 31 23:59:59 2023 GMT",
+        "fingerprint": "D6:27:27:66:FB:8A:91:E6:31:3A:B8:AF:B1:79:4B:8F:C7:A6:5A:DC",
+        "serialNumber": "0ca957132974cf013412536c0da68557"
+      }
+    }
+  },
+  "Request Headers": {
+    "content-type": "application/json",
+    "user-agent": "PostmanRuntime/7.29.2",
+    "accept": "*/*",
+    "postman-token": "49cd929a-5dbd-4c8c-9442-7f708ff10dae",
+    "host": "restful-booker.herokuapp.com",
+    "accept-encoding": "gzip, deflate, br",
+    "connection": "keep-alive"
+  },
+  "Request Body": "",
+  "Response Headers": {
+    "server": "Cowboy",
+    "connection": "keep-alive",
+    "x-powered-by": "Express",
+    "content-type": "text/plain; charset=utf-8",
+    "content-length": "9",
+    "etag": "W/\"9-0gXL1ngzMqISxa6S1zx3F4wtLyg\"",
+    "date": "Fri, 16 Dec 2022 16:56:22 GMT",
+    "via": "1.1 vegur"
+  },
+  "Response Body": "Not Found"
+}
